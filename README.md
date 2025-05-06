@@ -1,11 +1,12 @@
 
 ## macOS release announce to Slack
 
-This takes info from https://sofafeed.macadmins.io and whenever a new build is released (or whenever this runs) outputs the latest macOS version info to Slack.
+This takes info from https://sofafeed.macadmins.io and whenever a new build is released (or whenever this runs) outputs the latest macOS version info to Slack. It also creates a JAMF Smart Group to evaluate who is on the latest version released already, if any, and creates a pie chart to display on Slack.
 
 ### You'll need
 
 - Somewhere to host this that accepts incoming requests (like a Google Cloud Run Function)
+- JAMF
 - A way to trigger (like a pub/sub topic)
 - Some environment variables set:
   - `macosversion`
