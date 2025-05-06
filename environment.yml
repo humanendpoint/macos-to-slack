@@ -1,0 +1,7 @@
+name: macos-to-slack
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - flake8
+  - pytest
